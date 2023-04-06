@@ -22,6 +22,7 @@ function getLocation(position) {
             essential: true
         })
     })
+    marker1.center(longitude, latitude);
 }
 
 function errorHandler() {

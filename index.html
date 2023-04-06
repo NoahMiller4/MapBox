@@ -81,15 +81,18 @@
         <div class="border"></div>
         <button class="location" >Show Location</button>
         <div class="container flex map" id="bottom"><a href="bottom"></a>
-            <a href="#" class="img"><div id="map" style="width: 100%; height: 90%;"></div>
+            <a href="" class="img"><div id="map" style="width: 100%; height: 90%;"></div>
                 <script>
                     mapboxgl.accessToken = 'pk.eyJ1Ijoibm9zZWJ5IiwiYSI6ImNsZzViYjM3bTAxcGEzaHFybDd3MW8wMnYifQ.wk2obNgJ24gbwkd7D-kJtw';
                 const map = new mapboxgl.Map({
                     container: 'map', 
                     style: 'mapbox://styles/mapbox/streets-v12',
                     center: [-97.138374, 49.895138],
-                    zoom: 12
+                    zoom: 14
                 });
+                const marker1 = new mapboxgl.Marker()
+                .setLngLat([-97.138374, 49.895138])
+                .addTo(map);
                 </script>
             </a>
         </div>
