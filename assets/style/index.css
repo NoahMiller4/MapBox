@@ -87,15 +87,6 @@ nav ul li + li {
 }
 
 /* -----------------------------------*/
-/* Content                            */
-/* -----------------------------------*/
-
-#middle {
-    height: 80vh;
-}
-
-
-/* -----------------------------------*/
 /* Hero Banner                        */
 /* -----------------------------------*/
 
@@ -116,10 +107,127 @@ h2 {
     color: #000;
 }
 
-@media(max-width: 768px) {
-    .title h1 { font-size: 22px;}
-    nav ul li a { 
-        font-size: 18px;
+h4 {
+    position: absolute;
+    top: 400px;
+    right: 280px;
+    color: var(--app-dark-bg);
+    font-size: 30px;
+    font-weight: 700;
+}
 
-    }
+h5 {
+    display: inline-block;
+    margin-top: 200px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h5 p {
+    font-size: 20px;
+}
+
+.image {
+    position: relative;
+    bottom: 35px;
+    height: 60px;
+    width: 60px;
+}
+
+button {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 120px;
+    height: 55px;
+    background-color: var(--app-dark-bg);
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    bottom: 80px;
+    right: 80px;
+}
+
+button:hover {
+    color: #5c5c5c;
+}
+
+/* -----------------------------------*/
+/* Content                            */
+/* -----------------------------------*/
+
+#middle {
+    height: 92vh;
+}
+
+img {
+    display: inline-flex;
+    margin: 20px;
+    float: left;
+    border-radius: 8px;
+}
+
+img + img + img {
+    padding-bottom: 15px;
+}
+
+.testimonial1 {
+    float: left;
+    border-bottom: solid 1px rgb(0 0 0 / 0.3);
+}
+
+h3 {
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+p {
+    padding-top: 5px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonial2 {
+    position: relative;
+    top: 400px;
+    right: 100px;
+}
+
+/* -----------------------------------*/
+/* Map                                */
+/* -----------------------------------*/
+
+#bottom {
+    height: 100vh;
+}
+
+
+.location {
+    position: relative;
+    left: 80px;
+    width: 180px;
+}
+
+/* -----------------------------------*/
+/* Responsiveness                     */
+/* -----------------------------------*/
+
+@media(max-width: 768px) {
+    .title h1 { font-size: 22px; }
+
+    nav ul li a { font-size: 18px; }
+
+    h3, p { display: inline-flex; }
+
+    .testimonial2 { top: 0;}
+
+    h5 p {font-size: 15px;
+    margin-right: 20px;}
 }

@@ -8,3 +8,6 @@
 
 'use strict'
 
+
+const location = document.querySelector('.location')
+
