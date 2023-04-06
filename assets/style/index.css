@@ -44,13 +44,15 @@ header .flex {
 }
 
 .title h1 {
-  color: #000000;
-  margin-top: 30px;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  line-height: 20px;
-  text-transform: uppercase;
+    position: relative;
+    right: 200px;
+    color: #000000;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
 nav {
@@ -161,6 +163,11 @@ button:hover {
 /* Content                            */
 /* -----------------------------------*/
 
+.border {
+    border-bottom: solid 1px rgb(0 0 0 / 0.3);
+    box-shadow:  1px 1px #888888;
+}
+
 #middle {
     height: 92vh;
 }
@@ -204,15 +211,24 @@ p {
 /* Map                                */
 /* -----------------------------------*/
 
+.map {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 #bottom {
-    height: 100vh;
+    height: 80vh;
 }
 
 
 .location {
     position: relative;
+    top: 5px;
     left: 80px;
     width: 180px;
+    margin: 20px;
 }
 
 /* -----------------------------------*/
@@ -220,14 +236,36 @@ p {
 /* -----------------------------------*/
 
 @media(max-width: 768px) {
-    .title h1 { font-size: 22px; }
+    .title h1 { 
+        font-size: 22px; 
+        right: 0;
+    }
 
     nav ul li a { font-size: 18px; }
 
-    h3, p { display: inline-flex; }
+    .btn {
+        right: 20px;
+        bottom: 20px;
+    }
 
-    .testimonial2 { top: 0;}
 
-    h5 p {font-size: 15px;
-    margin-right: 20px;}
+    h3 {
+        display: inline;
+    }
+
+    .testimonial2 { 
+        top: 0;
+        left: 10px;
+    }
+
+    h5 p {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    img { 
+        height: 25%;
+        width: 25%;
+        margin-right: 30px;
+    }
 }
