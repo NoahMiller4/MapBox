@@ -22,7 +22,7 @@ function getLocation(position) {
             essential: true
         })
     })
-    marker1.center(longitude, latitude);
+    marker.setLngLat([longitude, latitude]).addTo(map)
 }
 
 function errorHandler() {
@@ -35,3 +35,7 @@ if (navigator.geolocation) {
 } else {
     mapBox.innerHTML =  "Geolocation is not supported by your browser"
 }
+
+const marker = new mapboxgl.Marker({
+    color: '#3898ff'
+});
